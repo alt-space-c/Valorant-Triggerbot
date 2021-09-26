@@ -2,9 +2,9 @@
 The fastest python triggerbot for Valorant.
 
 ## About
-The reaction time of the bot is extremely fast and only capped by your monitor refresh rate.
+The reaction time of the bot is extremely fast as it is only limited by your monitor refresh rate.
 
-e.g. 144 detections per second for a 144hz monitor
+e.g. It will search 144 times per second on a 144hz monitor
 
 ## Features
 - red or purple enemies
