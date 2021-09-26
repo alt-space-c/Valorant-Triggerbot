@@ -29,9 +29,9 @@ the installation.
 #### FAQ
 Will I get banned using this?
 
-- Very unlikely as long as you run Unique.py
+- highly unlikely as long as you run Unique.py
 - (I have not been banned in over 4 months of using this)
 
 Why am I releasing this?
 
-- I coded another triggerbot in c++ which is faster and has more options lol
+- I use another triggerbot I coded in c++ which is faster and better lol
