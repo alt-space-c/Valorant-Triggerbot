@@ -11,7 +11,7 @@ An extremely fast python triggerbot for valorant.
 ![Picture](https://i.ibb.co/N9cGj7J/preview.png)
 
 ## Usage
-1. Run Unique.py to make the triggerbot file unique and avoid getting banned.
+1. First run Unique.py to make the triggerbot file unique and avoid getting banned.
 1. Run prefire.py and follow the setup for first time usage.
 2. Trigger key and mode are saved in config.txt.
 
