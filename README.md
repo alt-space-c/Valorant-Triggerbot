@@ -8,8 +8,8 @@ e.g. It will search 144 times per second on a 144hz monitor
 
 ## Features
 - red or purple enemies
-- hold or toggle modes
 - auto counterstrafe
+- hold or toggle modes
 - any custom keybind
 - auto install dependencies
 
