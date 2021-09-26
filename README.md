@@ -9,6 +9,7 @@ e.g. 144 detections per second for a 144hz monitor
 ## Features
 - red or purple enemies
 - hold or toggle modes
+- auto counterstrafe
 - any custom keybind
 - auto install dependencies
 
