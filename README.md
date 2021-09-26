@@ -1,4 +1,4 @@
-# valorant-triggerbot
+# Valorant-Triggerbot
 An extremely fast python triggerbot for valorant.
 
 ## Features
