@@ -29,7 +29,8 @@ the installation.
 #### FAQ
 Will I get banned using this?
 
-1. Very unlikely as long as you run Unique.py as I have not been banned in over 4 months of using this.
+1. Very unlikely as long as you run Unique.py
+2. (I have not been banned in over 4 months of using this)
 
 Why am I releasing this?
 
