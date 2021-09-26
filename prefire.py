@@ -19,7 +19,7 @@ INFO = "\x1b[38;5;255m[\x1b[35m*\x1b[38;5;255m]"
 try:
     from PIL.Image import frombytes
     from mss import mss
-    from keyboard import is_pressed, add_hotkey
+    from keyboard import is_pressed, add_hotkey, block_key, unblock_key
 except ModuleNotFoundError:
     print(f"{INFO} Installing required modules.")
     o = system("pip3 install keyboard mss pillow --quiet --no-warn-script-location --disable-pip-version-check")
@@ -83,9 +83,36 @@ class PopOff:
                 r, g, b = pmap.getpixel((x, y))
                 if R - TOLERANCE < r < R + TOLERANCE and G - TOLERANCE < g < G + TOLERANCE and B - TOLERANCE < b < B + TOLERANCE:
                     print(f"\x1b[2A{SUCCESS} Reaction time: {int((perf_counter() - start_time) * 1000)}ms")
+                    blocked, held = [], []
+                    if any(user32.GetKeyState(k) > 1 for k in [87, 65, 83, 68]):
+                        if is_pressed("a"):
+                            block_key(30)
+                            blocked.append(30)
+                            user32.keybd_event(68, 0, 0, 0)
+                            held.append(68)
+                        if is_pressed("d"):
+                            block_key(32)
+                            blocked.append(32)
+                            user32.keybd_event(65, 0, 0, 0)
+                            held.append(65)
+                        if is_pressed("w"):
+                            block_key(17)
+                            blocked.append(17)
+                            user32.keybd_event(83, 0, 0, 0)
+                            held.append(83)
+                        if is_pressed("s"):
+                            block_key(31)
+                            blocked.append(31)
+                            user32.keybd_event(87, 0, 0, 0)
+                            held.append(87)
+                        sleep(0.1)
                     user32.mouse_event(2, 0, 0, 0, 0)
                     sleep(0.005)
                     user32.mouse_event(4, 0, 0, 0, 0)
+                    for b in blocked:
+                        unblock_key(b)
+                    for h in held:
+                        user32.keybd_event(h, 0, 2, 0)
                     break
 
     def hold(self):
