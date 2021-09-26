@@ -1,5 +1,5 @@
 # Valorant-Triggerbot
-The fastest python triggerbot for valorant.
+The fastest python triggerbot for Valorant.
 
 ## About
 The reaction time of the bot is extremely fast and only capped by your monitor refresh rate.
